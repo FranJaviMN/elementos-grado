@@ -1,0 +1,54 @@
+10:58:18.220106 08:00:27:42:f8:ba > ff:ff:ff:ff:ff:ff, ethertype IPv4 (0x0800), length 342: (tos 0x10, ttl 128, id 0, offset 0, flags [none], proto UDP (17), length 328)
+    0.0.0.0.68 > 255.255.255.255.67: [udp sum ok] BOOTP/DHCP, Request from 08:00:27:42:f8:ba, length 300, xid 0x7dc3876, Flags [none] (0x0000)
+	  Client-Ethernet-Address 08:00:27:42:f8:ba
+	  Vendor-rfc1048 Extensions
+	    Magic Cookie 0x63825363
+	    DHCP-Message Option 53, length 1: Discover
+	    Hostname Option 12, length 8: "nodolan1"
+	    Parameter-Request Option 55, length 13: 
+	      Subnet-Mask, BR, Time-Zone, Default-Gateway
+	      Domain-Name, Domain-Name-Server, Option 119, Hostname
+	      Netbios-Name-Server, Netbios-Scope, MTU, Classless-Static-Route
+	      NTP
+	    Client-ID Option 61, length 19: hardware-type 255, 27:42:f8:ba:00:01:00:01:27:11:ad:48:08:00:27:42:f8:ba
+10:58:20.747170 08:00:27:b0:90:51 > 08:00:27:42:f8:ba, ethertype IPv4 (0x0800), length 342: (tos 0x10, ttl 128, id 0, offset 0, flags [none], proto UDP (17), length 328)
+    192.168.100.1.67 > 192.168.100.104.68: [udp sum ok] BOOTP/DHCP, Reply, length 300, xid 0x7dc3876, Flags [none] (0x0000)
+	  Your-IP 192.168.100.104
+	  Client-Ethernet-Address 08:00:27:42:f8:ba
+	  Vendor-rfc1048 Extensions
+	    Magic Cookie 0x63825363
+	    DHCP-Message Option 53, length 1: Offer
+	    Server-ID Option 54, length 4: 192.168.100.1
+	    Lease-Time Option 51, length 4: 600
+	    Subnet-Mask Option 1, length 4: 255.255.255.0
+	    BR Option 28, length 4: 192.168.100.255
+	    Default-Gateway Option 3, length 4: 192.168.100.2
+	    Domain-Name-Server Option 6, length 8: 8.8.8.8,8.8.4.4
+10:58:20.750583 08:00:27:42:f8:ba > ff:ff:ff:ff:ff:ff, ethertype IPv4 (0x0800), length 344: (tos 0x10, ttl 128, id 0, offset 0, flags [none], proto UDP (17), length 330)
+    0.0.0.0.68 > 255.255.255.255.67: [udp sum ok] BOOTP/DHCP, Request from 08:00:27:42:f8:ba, length 302, xid 0x7dc3876, Flags [none] (0x0000)
+	  Client-Ethernet-Address 08:00:27:42:f8:ba
+	  Vendor-rfc1048 Extensions
+	    Magic Cookie 0x63825363
+	    DHCP-Message Option 53, length 1: Request
+	    Server-ID Option 54, length 4: 192.168.100.1
+	    Requested-IP Option 50, length 4: 192.168.100.104
+	    Hostname Option 12, length 8: "nodolan1"
+	    Parameter-Request Option 55, length 13: 
+	      Subnet-Mask, BR, Time-Zone, Default-Gateway
+	      Domain-Name, Domain-Name-Server, Option 119, Hostname
+	      Netbios-Name-Server, Netbios-Scope, MTU, Classless-Static-Route
+	      NTP
+	    Client-ID Option 61, length 19: hardware-type 255, 27:42:f8:ba:00:01:00:01:27:11:ad:48:08:00:27:42:f8:ba
+10:58:20.757273 08:00:27:b0:90:51 > 08:00:27:42:f8:ba, ethertype IPv4 (0x0800), length 342: (tos 0x10, ttl 128, id 0, offset 0, flags [none], proto UDP (17), length 328)
+    192.168.100.1.67 > 192.168.100.104.68: [udp sum ok] BOOTP/DHCP, Reply, length 300, xid 0x7dc3876, Flags [none] (0x0000)
+	  Your-IP 192.168.100.104
+	  Client-Ethernet-Address 08:00:27:42:f8:ba
+	  Vendor-rfc1048 Extensions
+	    Magic Cookie 0x63825363
+	    DHCP-Message Option 53, length 1: ACK
+	    Server-ID Option 54, length 4: 192.168.100.1
+	    Lease-Time Option 51, length 4: 600
+	    Subnet-Mask Option 1, length 4: 255.255.255.0
+	    BR Option 28, length 4: 192.168.100.255
+	    Default-Gateway Option 3, length 4: 192.168.100.2
+	    Domain-Name-Server Option 6, length 8: 8.8.8.8,8.8.4.4
