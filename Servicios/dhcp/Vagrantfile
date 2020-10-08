@@ -1,0 +1,28 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  config.vm.define :servidor do |servidor|
+    servidor.vm.box = "debian/buster64"
+    servidor.vm.hostname = "servidor"
+    servidor.vm.network :public_network, :bridge=>"wlp2s0"
+    servidor.vm.network :private_network, ip: "192.168.100.1",
+    virtualbox__intnet: "red1"
+    servidor.vm.network :private_network, ip: "192.168.200.1",
+    virtualbox__intnet: "red2"
+
+  end
+  config.vm.define :nodolan1 do |nodolan1|
+    nodolan1.vm.box = "debian/buster64"
+    nodolan1.vm.hostname = "nodolan1"
+    nodolan1.vm.network :private_network, type: "dhcp",
+    virtualbox__intnet: "red1"
+  end
+
+  config.vm.define :nodolan2 do |nodolan2|
+    nodolan2.vm.box = "debian/buster64"
+    nodolan2.vm.hostname = "nodolan2"
+    nodolan2.vm.network :private_network, type: "dhcp",
+    virtualbox__intnet: "red2"
+  end
+end
