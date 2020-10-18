@@ -18,12 +18,12 @@ if [[ $var1 == *"http"* ]]; then #comprobamos si empieza por la cadena http://
 
     for p in $(dpkg -l | grep '^ii' | cut -d ' ' -f 3);
     do 
-    apt-cache showpkg $p | head -3 | grep -v '^Versions' | sed -e 's/Package: //;' | paste - - ; done | grep $repo | awk -F '\t' '{print $1}' 
+    apt-cache showpkg $p | head -3 | grep -v '^Versions' | paste - - ; done | grep $repo | awk '{print $2}' 
 
 #Si la cadena no empieza por http:// no hacemos la comprobacion y entramos en el codigo para la consulta de los paquetes Ej: security.debian.org.
 
 else
     for p in $(dpkg -l | grep '^ii' | cut -d ' ' -f 3);
     do 
-    apt-cache showpkg $p | head -3 | grep -v '^Versions' | sed -e 's/Package: //;' | paste - - ; done | grep $repo | awk -F '\t' '{print $1}'
+    apt-cache showpkg $p | head -3 | grep -v '^Versions' | paste - - ; done | grep $repo | awk '{print $2}'
 fi
